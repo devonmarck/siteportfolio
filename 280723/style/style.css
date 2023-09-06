@@ -1,0 +1,130 @@
+/*
+morgin corresponde a margem esterna em relação no elemento padding á margem interna em relação ao elemento
+backgraud corresponde ao fundo , no qual é possivel colocar uma cor sólida única ou em grediente
+
+box-stizing: content-box não é uma boa pratica, pois ao aumentarmos uma imagem, por exemplo, ou qualquer outro elemento,o que 
+ocorre é que CAIXA DE CONTEÚDO ( em que o elemento está ) aumenta e não ele em si, causando possível discortoções. ideal é utilizar
+box-sizing: border-box
+
+utilizar o site: https://cssgradient.io/
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#menu {
+  display: flex; /* selecionar o layout flexbox */
+  list-style: none; /* tirar as bolinhas de cada item da lista*/
+  padding: 10px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+#menu a {
+  font-family: "EB Garamond", serif; /*aplicar uma cor á fonte*/
+  color: rgb(3, 3, 3); /* aplicar uma fonte */
+  font-size: 23px; /*aumentar o tamanho da fonte*/
+  text-decoration: none; /*tirar o sublinhado do link*/
+  flex-direction: row; /*alinhar um ao lado do outro*/
+  margin: 20px; /*atribuir uma margin a cada item*/
+  text-transform: uppercase;
+  
+}
+
+/* ao passar o mouse */
+#menu a:hover {
+  color: rgb(red, green, blue);
+  margin: 15px;
+}
+
+header {
+  background: rgb(114, 28, 81);
+  background: linear-gradient(90deg, rgba(128,31,91,1) 4%, rgba(241,81,221,1) 29%, rgba(0,212,255,1) 100%);
+ }
+h1 {
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(73, 61, 61);
+  text-align: center;
+}
+h2 {
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.apresentacao {
+  display: flex;
+  padding-bottom: 60px;
+}
+.right {
+  flex: 5;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.left {
+  flex: 5;
+  text-align: center;
+}
+
+.btn {
+  border: 10px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.btnContact {
+  background: rgb(22, 22, 22);
+  color: black;
+  margin-top: 10px;
+}
+
+.btnContact:hover {
+  background: rgb(37, 15, 59);
+  color: rgb(51, 38, 167);
+}
+.conteinerServicos{
+  background: rgb(49, 10, 53);
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  
+}
+.itemServicos1, .itemServicos3{
+border: 1px solid rgb(232, 229, 235);
+border-radius: 5px;
+margin: 15px;
+padding: 40px 20px;
+text-align: center
+
+}
+.itemServicos2, .itemServicos4{
+border: 1px solid rgb(175, 106, 240);
+border-radius: 5px;
+margin: 15px;
+padding: 40px 20px;
+text-align: center
+}
+.itemServicos5, .itemServicos6, .itemServicos7, .itemServicos8{
+  border: 1px solid rgb(80, 67, 92);
+border-radius: 5px;
+margin: 15px;
+padding: 40px 20px;
+text-align: center
+} 
+
+.conteinerServicos h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  color: antiquewhite;
+}
+
+ 
